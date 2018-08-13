@@ -68,9 +68,11 @@ header {
 }
 .callCenterInfo {
     text-align: right;
-    font-size: 15px;
+    font-size: 15px !important;  
 }
-
+.phoneNumber {
+    font-size: 18px !important;
+}
 /* MENU TOGGLE BUTTON WITH ALL ANIMATION EFFECTS */
 
 .menuToggleBtn {
@@ -90,10 +92,10 @@ header {
 
 .toggleBtnActive {
     transform: translateY(4px);
-    -webkit-transform: translateY(4px);
-    -moz-transform: translateY(4px);
-    -ms-transform: translateY(4px);
-    -o-transform: translateY(4px);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 
 .menuToggleBtn_lines {
@@ -108,25 +110,25 @@ header {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    -webkit-transition:.5s  ;
-    -moz-transition:.5s;
-    -ms-transition:.5s;
-    -o-transition:.5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 .toggleBtnActive > .menuToggleBtn_lines:nth-of-type(1) {
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 
 .toggleBtnActive > .menuToggleBtn_lines:nth-of-type(2) ,.toggleBtnActive > .menuToggleBtn_lines:nth-of-type(3) {
     transform: rotate(135deg) translate(-6px,6px);
-    -webkit-transform: rotate(135deg) translate(-6px,6px);
-    -moz-transform: rotate(135deg) translate(-6px,6px);
-    -ms-transform: rotate(135deg) translate(-6px,6px);
-    -o-transform: rotate(135deg) translate(-6px,6px);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 
 .toggleBtnActive > .menuToggleBtn_lines:nth-of-type(3) {
@@ -145,46 +147,12 @@ header {
     color: #000000;
     padding: 20px 0;
     transition: .5s;
-    -webkit-transition:.5s;
-    -moz-transition:.5s;
-    -ms-transition:.5s;
-    -o-transition:.5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
-.dropDown {
-    width: 150px;
-    max-height: 0;
-    position: absolute;
-    overflow: hidden;
-    top: 150%;
-    left: 0;
-    transform: translateX(-25%);
-    transition: .7s;
-    -webkit-transition:.7s;
-    -moz-transition:.7s;
-    -ms-transition:.7s;
-    -o-transition:.7s;
-    background: #fff;
-    padding-left: 30px !important;
-    -webkit-transform: translateX(-25%);
-    -moz-transform: translateX(-25%);
-    -ms-transform: translateX(-25%);
-    -o-transform: translateX(-25%);
-}
-.navlist__item_linkWord {
-    font-size: 20px;
-    text-transform: capitalize;
-    cursor: pointer;
-    text-align: center;
-}
-.dropDown___item {
-    margin: 10px 0;
-    display: block;
-}
-.dropDown__item_link {
-    text-decoration: none;
-    color: #000;
-}
 .navlist__item {
     display: inline-block;
     position: relative;
@@ -258,7 +226,7 @@ header {
 
 .contacts ul {
     list-style: none;
-    padding-left: 100px;
+    padding-left: 80px;
     text-align: left;
 }
 

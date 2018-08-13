@@ -158,21 +158,30 @@ header {
     flex-grow: 2;
 }
 .slide1 {
-    background: url(../imgs/1.jpg) no-repeat center center;
+    background: url(../imgs/1.jpg) no-repeat;
+    background-size: 100% 140% !important;
+    background-position-x: center;
+    background-position-y: -100px;
 }
 .slide2 {
     background: url(../imgs/2.jpg) no-repeat center center;    
+    background-size: 100% 120%  !important;
 }
 .slide3 {
-    background: url(../imgs/3.jpg) no-repeat left center;    
+    background: url(../imgs/3.jpg) no-repeat center center;    
 }
 .swiper-slide {
     width: 100%;
-    background-size: 100% 120%;
+    background-size: 100% 100%;
     box-shadow: inset 0 0 1000px 1000px #00000057;
 }
 .swiper-pagination-bullet {
     background: #fff;
+}
+.slideTitle {
+    color: rgba(255, 255, 255, 0.884);
+    padding-left: 40px;
+    font-size: 30px;
 }
 /* slider slider slider slider slider slider slider slider slider */
 
@@ -217,8 +226,14 @@ header {
     background: url(../imgs/1.jpg) no-repeat center center;
     background-size: cover;
 }
-#projects .project2 {}
-#projects .project3 {}
+#projects .project2 {
+    background: url(../imgs/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+#projects .project3 {
+    background: url(../imgs/3.jpg) no-repeat center center;
+    background-size: cover;
+}
 #projects .project4 {
     background: url(../imgs/4.jpg) no-repeat center center;
     background-size: cover;
@@ -315,33 +330,6 @@ header {
 */
 
 
-.contacts {
-    text-align: center;
-}
-
-.contacts ul {
-    list-style: none;
-    padding-left: 100px;
-    text-align: left;
-}
-
-.contacts p {
-    font-size: 20px;
-}
-
-.contacts li {
-    margin: 10px 0;
-}
-
-
-.contacts i {
-    font-size: 25px;
-    margin-right: 20px;
-}
-.contacts a {
-    font-size: 20px;
-    color: #000;        
-}
 
 /* 
     contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts

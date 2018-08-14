@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="shortcut icon" href="imgs/logoColored.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:100,400,700&amp;subset=cyrillic" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="basicStyles.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
@@ -34,7 +33,7 @@
                     <a href="#" class="navList_responsive__link">О Компании</a>
                 </li>
                 <li class="navList_responsive__item">
-                    <a href="#" class="navList_responsive__link scrollOurProjects">Наши проекты</a>
+                    <a href="#" data-id="projects" class="navList_responsive__link scrollOurProjects">Наши проекты</a>
                 </li>
                 <li class="navList_responsive__item">
                     <a href="#" class="navList_responsive__link">Наши партнеры</a>
@@ -43,21 +42,21 @@
                     <a href="#" class="navList_responsive__link">Акции</a>
                 </li>
                 <li class="navList_responsive__item">
-                    <a href="#" class="navList_responsive__link">Контакты</a>
+                    <a href="#" data-id="getConnected" class="navList_responsive__link">Контакты</a>
                 </li>
             </ul>
             <ul class="navList"><!--класс navlist__item_withDroping задан чтобы очистить элемент с дропом от эффекта при навидении -->
                 <li class="navlist__item"><a href="#" class="navlist__item_link">О Компании</a></li>
-                <li class="navlist__item"><a href="#" class="navlist__item_link">Наши проекты</a></li>
+                <li class="navlist__item"><a href="#" data-id="projects" class="navlist__item_link">Наши проекты</a></li>
                 <li class="navlist__item"><a href="#" class="navlist__item_link">Наши партнеры</a></li>
                 <li class="navlist__item"><a href="#" class="navlist__item_link">Акции</a></li>
-                <li class="navlist__item"><a href="#" class="navlist__item_link">Контакты</a></li>
+                <li class="navlist__item"><a href="#" data-id="getConnected" class="navlist__item_link">Контакты</a></li>
             </ul>
             <div class="callCenterInfo">
                 <p> <span class="phoneNumber">+99895 146-28-38</span> <br> Круглосуточный Колл-центр</p>
             </div>
         </nav>
-        <div class="swiper-container">
+        <div class="swiper-container hidden-md">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -83,24 +82,24 @@
                     <div class="project project1">
                         <div class="project__status selling">Идет продажа</div>
                         <h3 class="projectName">Askiya City</h3>
-                        <p class="projectInfo">Элитный жилой комплекс “ASKIYA CITY” будет построен в самом центе города на пересечении  улиц  Аския и Шохжахон  Яккасарайского района города Ташкента.   Преимущества: - расположение в элитном районе; - торговые точки; - детская площадка; - свободная парковка; - подземная парковка; свободная планировка квартир от 39 кв.м. до 150 кв.м.  <br> <br> Тошкент шахар, Яккасарой тумани, Аския, Шохжахон, Жамшид шоший кучаларида жойлашган куп каватли турар жой мажмуаси </p>
+                        <p class="projectInfo"> <span class="hidden-md"> Элитный жилой комплекс “ASKIYA CITY” будет построен в самом центе города на пересечении  улиц  Аския и Шохжахон  Яккасарайского района города Ташкента.   Преимущества: - расположение в элитном районе; - торговые точки; - детская площадка; - свободная парковка; - подземная парковка; свободная планировка квартир от 39 кв.м. до 150 кв.м. </span>  <br> <br> Тошкент шахар, Яккасарой тумани, Аския, Шохжахон, Жамшид шоший кучаларида жойлашган куп каватли турар жой мажмуаси </p>
                     </div>
                 </a>
-                <a href="#" class="col-md-5 projectsContent__link">
+                <a href="askiya2/index.html" class="col-md-5 projectsContent__link">
                     <div class="project project2">
                         <div class="project__status selling">Идет продажа</div>
                         <h3 class="projectName">Askiya City 2</h3>
                         <p class="projectInfo"></p>
                     </div>
                 </a>
-                <a href="#" class="col-md-5 projectsContent__link">
+                <a href="qushbegi/index.html" class="col-md-5 projectsContent__link">
                     <div class="project project3">
                         <div class="project__status selling">Идет продажа</div>
                         <h3 class="projectName">Qushbegi</h3>
                         <p class="projectInfo"></p>
                     </div>
                 </a>
-                <a href="muqumiy/muqumiy.html" class="col-md-5 projectsContent__link">
+                <a href="muqumiy/index.html" class="col-md-5 projectsContent__link">
                     <div class="project project4">
                         <div class="project__status selling">Идет продажа</div>
                         <h3 class="projectName">Muqumiy</h3>
@@ -111,6 +110,27 @@
         </div>
     </section>
     <footer>
+        <div class="getConnected" id="getConnected" >
+            <div class="container">
+                <form action="#" method="post" class="row col-md-5 contactForm">
+                    <p class="title">Свяжитесь с нами</p>
+                    <div class="consultants">
+                        <div class="consultantPics">
+                            <div class="pics">
+                                <img src="https://i.stack.imgur.com/2Mwin.jpg?s=136&g=1" alt="consultant">
+                                <img src="https://i.stack.imgur.com/2Mwin.jpg?s=136&g=1" alt="consultant">
+                            </div>
+                        </div>
+                        <p>Консультанты колл-центра</p>
+                    </div>
+                    <input type="text" name="name" id="name" class="col-12 fields" placeholder="Ваше имя...">
+                    <input type="email" name="email" id="email" class="col-12 fields" placeholder="Ваш E-mail...">
+                    <input type="tel" name="tel" id="tel" class="col-12 fields" placeholder="Номер телефона +998(_)___-__-__">
+                    <textarea name="message" id="message"  class="col-12 messageField" placeholder="Введите сообщение..."></textarea>
+                    <input type="submit" value="Отправить" class="col-12 submitBtn">
+                </form>
+            </div>
+        </div>
         <div class="contacts">
             <div class="container">
                 <div class="row">
@@ -142,5 +162,8 @@
             </div>
         </div>
     </footer>
+    <div class="toTop">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
 </body>
 </html>

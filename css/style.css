@@ -12,12 +12,13 @@ img {
 }
 
 .contentTitle {
-    width: 300px;
+    width: 100%;
     font-size: 40px;
     margin: 0 auto;
     text-align: center;
     font-weight: normal;
     position: relative;
+    margin: 40px auto;
 }
 
 .ml20 {
@@ -225,15 +226,88 @@ header {
     box-shadow: inset 0 0 1000px 1000px #00000057;
     padding-top: 150px;
     box-sizing: border-box;
-}
-.swiper-pagination-bullet {
-    background: #fff;
+    text-align: center;
+    overflow: hidden;
 }
 .slideTitle {
     color: rgba(255, 255, 255, 0.884);
     padding-left: 40px;
-    font-size: 30px;
+    font-size: 50px;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: transform 1.3s, opacity 1.s;
+    transform: translateY(-700px);
+    -webkit-transform: translateY(-700px);
+    -moz-transform: translateY(-700px);
+    -ms-transform: translateY(-700px);
+    -o-transform: translateY(-700px);
+    -webkit-transition: transform 1.3s, opacity 1.s;
+    -moz-transition: transform 1.3s, opacity 1.s;
+    -ms-transition: transform 1.3s, opacity 1.s;
+    -o-transition: transform 1.3s, opacity 1.s;
 }
+.shortInfo {
+    width: 700px;
+    justify-content: space-between;
+    margin: 0 auto;
+    opacity: 0;
+    transition: transform 1.3s, opacity 1s;
+    transform: translateY(700px);
+    -webkit-transform: translateY(700px);
+    -moz-transform: translateY(700px);
+    -ms-transform: translateY(700px);
+    -o-transform: translateY(700px);
+    -webkit-transition: transform 1.3s, opacity 1s;
+    -moz-transition: transform 1.3s, opacity 1s;
+    -ms-transition: transform 1.3s, opacity 1s;
+    -o-transition: transform 1.3s, opacity 1s;
+}
+.shortInfo .iconWrapper {
+    background: #000;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    line-height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.shortInfo .infoText {
+    text-transform: uppercase;
+}
+.swiper-pagination-bullet {
+    background: #fff;
+}
+
+#slide1 .slideTitle , #slide1 .shortInfo {
+    animation: slideAnimation 1.3s ease-in-out 1s forwards;
+    -webkit-animation: slideAnimation 1.3s ease-in-out 1s forwards;
+}
+#slide2 .slideTitle , #slide2 .shortInfo {
+    animation: slideAnimation 1.3s ease-in-out 6s forwards;
+    -webkit-animation: slideAnimation 1.3s ease-in-out 6s forwards;
+}
+#slide3 .slideTitle , #slide3 .shortInfo {
+    animation: slideAnimation 1.3s ease-in-out 12.5s forwards;
+    -webkit-animation: slideAnimation 1.3s ease-in-out 12.5s forwards;
+}
+
+
+
+
+@keyframes slideAnimation {
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        opacity: 1;
+}
+}
+
 /* slider slider slider slider slider slider slider slider slider */
 
 /* Section Section Section Section Section Section Section Section Section Section Section */
@@ -376,6 +450,102 @@ header {
     background: red;
 }
 
+.aboutCompany {
+    min-height: 100vh;
+    background: url(../imgs/aboutCompanyBg.jpg) no-repeat right bottom;
+    background-size: cover;
+}
+.aboutCompany .contentTitle {
+    color: #fff;
+}
+.aboutCompany__text {
+    font-size: 20px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.664);
+    padding: 10px 20px;
+}
+
+.uniqueness {
+    padding-bottom: 100px;
+}
+.unique {
+    height: 300px;
+    border: 1px solid;
+    background: url(http://placehold.it/800x800) no-repeat center center;
+    background-size: cover; 
+    text-align: center;
+    overflow-y: hidden;
+}
+.uniqueness .row1 {
+    flex-grow: 11111 !important;
+}
+
+.unique1 {
+    background: url(../imgs/playground.jpg) no-repeat center center;
+    background-size: cover;
+}
+.unique2 {
+    background: url(../imgs/contactsBg.jpg) no-repeat center center;
+    background-size: cover;
+}
+.unique3 {}
+.unique4 {}
+.unique5 {}
+
+.uniqueTitle {
+    font-size: 40px;
+    margin: 10px 0;
+    margin-top: 30px;
+    transition: .7s transform;
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    -webkit-transition: .7s transform;
+    -moz-transition: .7s transform;
+    -ms-transition: .7s transform;
+    -o-transition: .7s transform;
+}
+.uniqueText {
+    transition: .7s transform;
+    transform: translateY(300px);
+    -webkit-transform: translateY(300px);
+    -moz-transform: translateY(300px);
+    -ms-transform: translateY(300px);
+    -o-transform: translateY(300px);
+    -webkit-transition: .7s transform;
+    -moz-transition: .7s transform;
+    -ms-transition: .7s transform;
+    -o-transition: .7s transform;
+}
+
+.unique:hover > .uniqueTitle {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.unique:hover > .uniqueText  {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
 /*  Section Section Section Section Section Section Section Section Section Section */
 /* 
     contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts
@@ -383,6 +553,7 @@ header {
 
 .getConnected {
     min-height: 100vh;
+    padding-bottom: 30px; 
     background: url(../imgs/contactsBg.jpg) no-repeat center left;
     background-size: cover;
 }
@@ -423,6 +594,11 @@ header {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+.validation {
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+}
 .contactForm .fields {
     height: 40px;
     margin-bottom: 30px;
@@ -443,8 +619,8 @@ header {
 }
 .contactForm .submitBtn:hover {
     background-color: #ece8e8;
+    color: #000;
 }
-
 .contactForm input , .contactForm textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
@@ -684,6 +860,9 @@ header {
         font-size: 14px;
         padding: 0 10px;
         font-size: 12px;
+    }
+    .toTop {
+        display: none;
     }
 }
 

@@ -1,6 +1,35 @@
 header {
     height: auto !important;
 }
+#gallery .swiper-slide {
+    height: 400px;
+}
+
+#gallery .swiper-slide.slide1 {
+    background: url(qushbegiImgs/1.jpg) no-repeat center center;
+    background-size: cover;
+}
+#gallery .swiper-slide.slide2 {
+    background: url(qushbegiImgs/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+#gallery .swiper-slide.slide3 {
+    background: url(qushbegiImgs/3.jpg) no-repeat center center;
+    background-size: cover;
+}
+#gallery .swiper-slide.slide4 {
+    background: url(qushbegiImgs/4.jpg) no-repeat center center;
+    background-size: cover;
+}
+#gallery .swiper-slide.slide5 {
+    background: url(qushbegiImgs/5.jpg) no-repeat center center;
+    background-size: cover;
+}
+#gallery .swiper-slide.slide6 {
+    background: url(qushbegiImgs/6.jpg) no-repeat center center;
+    background-size: cover;
+}
+
 
 
 

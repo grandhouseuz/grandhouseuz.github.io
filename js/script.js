@@ -16,11 +16,18 @@ window.addEventListener("DOMContentLoaded", function() {
             clearTimeout(scroller);
             scrolled = dest;
             window.scroll(0,scrolled);
+            scrolled = 0;
             return;
         }
         
         window.scroll(0,scrolled);
     }
+
+    var fromTopScrolled = 0;  
+
+    window.addEventListener("scroll", function() {
+        fromTopScrolled = window.scrollY;
+    });
 
 
 
@@ -30,20 +37,20 @@ window.addEventListener("DOMContentLoaded", function() {
             toTop(speed);
         },1);
 
-        scrolled -= speed;
+        fromTopScrolled -= speed;
 
-        if(scrolled <= 0) {
+        if(fromTopScrolled <= 0) {
             clearTimeout(scroller);
             return;
         }
         
-        window.scroll(0,scrolled);
+        window.scroll(0, fromTopScrolled);
     }
 
     var toTopBtn = document.querySelector(".toTop");
 
     toTopBtn.addEventListener("click", function() {
-        window.scroll(0,0);
+        toTop(10);
     });
 
     var linkParents = document.querySelectorAll(".navList_responsive , .navList");
@@ -51,13 +58,12 @@ window.addEventListener("DOMContentLoaded", function() {
     for (let i = 0; i < linkParents.length; i++) {
         linkParents[i].addEventListener("click", function(e) {
             var target = e.target || event.target;
-            e.preventDefault();
             var targetId = target.getAttribute("data-id");
 
             if(targetId){
-                initScroll(targetId, 15);
+                e.preventDefault();
+                initScroll(targetId, 10);
             }
-
             
         },false);
         
@@ -74,6 +80,11 @@ window.addEventListener("DOMContentLoaded", function() {
         } ,false);
     }
     menuBtn();
+
+    
+
+    
+
 
     var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters

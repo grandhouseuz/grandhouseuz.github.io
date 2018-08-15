@@ -3,6 +3,26 @@ header {
 }
 
 
+#gallery .swiper-slide {
+    height: 400px;
+}
+
+#gallery .swiper-slide.slide1 {
+    background: url(muqumiyImgs/1.jpg) no-repeat center center;
+    background-size: cover;
+}
+#gallery .swiper-slide.slide2 {
+    background: url(muqumiyImgs/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+#gallery .swiper-slide.slide3 {
+    background: url(muqumiyImgs/3.jpg) no-repeat center center;
+    background-size: cover;
+}
+#gallery .swiper-slide.slide4 {
+    background: url(muqumiyImgs/4.jpg) no-repeat center center;
+    background-size: cover;
+}
 
 
 
